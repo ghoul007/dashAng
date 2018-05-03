@@ -1,3 +1,4 @@
+[![Coverage Status](https://coveralls.io/repos/github/ghoul007/dashAng/badge.svg?branch=master)](https://coveralls.io/github/ghoul007/dashAng?branch=master)
 https://travis-ci.org/ghoul007/dashAng.svg?branch=master
 # TutoAhmed
 
