@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "build:gh-pages:demo1": "ng build --prod -e=demo1 -op=dashAng/demo1 bh=/dashAng/demo1",
+    "build:gh-pages:demo1": "ng build --prod -e=demo1 -op=dashAng/demo1 -bh=/dashAng/demo1",
     "test": "ng test",
     "test:cover": "rm -rf ./coverage  && ng test --no-watch --code-coverage",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
