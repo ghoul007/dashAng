@@ -38,4 +38,4 @@ deploy:
   keep-history: true
   local-dir: dashAng
   on:
-    branch: gh-pages
+    branch: master
