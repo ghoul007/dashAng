@@ -5,6 +5,9 @@ import { DashboardComponent } from './dashboard.component';
 import { DashboardRouteModule } from './dashboard.route';
 import { GridsterModule } from 'angular-gridster2';
 import { DashboardGridsterConfigService } from './dashboard-gridster-config.service';
+import { WidgetContainerComponent } from './widget-container.component';
+import { WidgetHostDirective } from './widget-host.directive';
+import { HelloWorldComponent } from './widgets/hello-world/hello-world.component';
 
 
 @NgModule({
@@ -14,6 +17,7 @@ import { DashboardGridsterConfigService } from './dashboard-gridster-config.serv
     GridsterModule
   ],
   providers: [DashboardGridsterConfigService],
-  declarations: [DashboardComponent]
+  entryComponents: [HelloWorldComponent],
+  declarations: [DashboardComponent, WidgetContainerComponent, WidgetHostDirective, HelloWorldComponent]
 })
 export class DashboardModule { }
