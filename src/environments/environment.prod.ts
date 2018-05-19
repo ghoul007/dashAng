@@ -7,7 +7,7 @@ const dashConfig: DashboardConfig = {
     {cols: 1, rows: 1, y: 0, x: 1},
     {cols: 1, rows: 1, y: 2, x: 0},
     {cols: 1, rows: 1, y: 0, x: 2},
-  ];
+  ]
 };
 
 export const environment = {
