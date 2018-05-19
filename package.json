@@ -12,7 +12,9 @@
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "precommit": "npm run lint"
+    "prettier": "prettier --write src/app/**/.*{ts,scss}",
+    "pretty-quick": "pretty-quick",
+    "precommit": " npm run lint"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +27,8 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "angular-gridster2": "^6.0.4",
+    "bootstrap": "^4.1.1",
     "bourbon": "^5.0.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
@@ -39,7 +43,7 @@
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
     "coveralls": "^3.0.1",
-    "husky": "^1.0.0-rc.2",
+    "husky": "^1.0.0-rc.4",
     "jasmine-core": "~2.8.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~2.0.0",
@@ -47,9 +51,15 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "prettier": "1.12.1",
+    "pretty-quick": "^1.4.1",
     "protractor": "~5.1.2",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
-  }
+  },
+  "browserslist": [
+    "> 5%",
+    "IE 10"
+  ]
 }

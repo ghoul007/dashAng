@@ -1,7 +1,10 @@
-@import "~bourbon/core/bourbon";
 
-h1{
-    @include ellipsis;
-    // @include hide-text;
 
+  body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
+
+ 
+ 
