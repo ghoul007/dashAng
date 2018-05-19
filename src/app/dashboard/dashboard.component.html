@@ -1,3 +1,6 @@
-<p>
-  dashboard works!
-</p>
+<gridster [options]=config>
+  <gridster-item *ngFor="let item of items; index as i" [item]=item>
+        <h4>item {{i+1}}</h4>
+        c:{{item.cols}} r:{{item.rows}}
+  </gridster-item>
+</gridster>
