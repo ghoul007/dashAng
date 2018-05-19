@@ -1,7 +1,7 @@
-@import "~bourbon/core/bourbon";
+// @import "~bourbon/core/bourbon";
 
-h1{
-    @include ellipsis;
-    user-select: none;
-    // @include hide-text;
+h1 {
+  // @include ellipsis;
+  user-select: none;
+  // @include hide-text;
 }
