@@ -39,6 +39,7 @@ deploy:
   keep-history: true
   local-dir: dashAng
   on:
+ 
     branch: gh-pages
  
   - xvfb-run -a npm run test -- --single-run --no-progress --browser=ChromeNoSandbox
