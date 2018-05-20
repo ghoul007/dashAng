@@ -40,6 +40,9 @@ deploy:
   local-dir: dashAng
   on:
  
+    tags: true 
+    all_branches: true
+ 
     branch: gh-pages
  
   - xvfb-run -a npm run test -- --single-run --no-progress --browser=ChromeNoSandbox
