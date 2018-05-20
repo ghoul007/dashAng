@@ -8,16 +8,20 @@ import { DashboardGridsterConfigService } from './dashboard-gridster-config.serv
 import { WidgetContainerComponent } from './widget-container.component';
 import { WidgetHostDirective } from './widget-host.directive';
 import { HelloWorldComponent } from './widgets/hello-world/hello-world.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GiphyDataService } from './widgets/widget-giphy/giphy-data.service';
+import { GiphyComponent } from './widgets/widget-giphy/giphy.component';
 
 
 @NgModule({
   imports: [
     CommonModule,
     DashboardRouteModule,
-    GridsterModule
+    GridsterModule,
+    HttpClientModule
   ],
-  providers: [DashboardGridsterConfigService],
-  entryComponents: [HelloWorldComponent],
-  declarations: [DashboardComponent, WidgetContainerComponent, WidgetHostDirective, HelloWorldComponent]
+  providers: [DashboardGridsterConfigService, GiphyDataService],
+  entryComponents: [HelloWorldComponent, GiphyComponent],
+  declarations: [DashboardComponent, WidgetContainerComponent, WidgetHostDirective, HelloWorldComponent, GiphyComponent]
 })
 export class DashboardModule { }
